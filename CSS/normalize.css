@@ -80,8 +80,6 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 
-/* ここから上はとりあえずok */
-
 a {
   background-color: #f0ffff;
 }
