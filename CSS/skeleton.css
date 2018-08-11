@@ -400,6 +400,7 @@ hr {
 .wiki-header {
   background: #000000;
   position: fixed;
+  opacity: 1.0;
 }
 
 
