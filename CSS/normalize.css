@@ -22,6 +22,7 @@ footer {
 header,
 footer {
   font-size: 1.6em;
+  padding: 1px;
 }
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
