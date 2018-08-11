@@ -17,6 +17,10 @@ header,
 footer {
   margin: 0;
 }
+
+body {
+  padding-top: 2px;
+}
 /* HTML5 display definitions */
 
 header{
