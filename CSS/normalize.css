@@ -20,8 +20,7 @@ footer {
 /* HTML5 display definitions */
 
 header{
-  padding: 2px;
-  border-top-width: 1em;
+  border-top-width: 3px;
   border-top-color: #000000;
 }
 /**
