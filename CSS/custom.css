@@ -99,7 +99,7 @@ ul {
 
 /* shrink image when the screen is narrow */
 img {
-     max-width: 100%;
+     max-width: 90%;
 }
 
 /* indent for class="indentback" */
