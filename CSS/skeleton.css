@@ -397,6 +397,11 @@ hr {
   display: table;
   clear: both; }
 
+.wiki-header {
+  background: #000000;
+  position: fixed;
+}
+
 
 /* Media Queries */
 /*
