@@ -1,0 +1,20 @@
+#!/bin/sh                                                                                                                                                                                                                                    
+
+dir=$1
+matching_ext=$2
+                                                     
+files=`find ${dir} -type f -name "*.${matching_ext}"`
+for file in $files
+do                                                    
+    file_format_check=`file ${file} | grep "with BOM"`   
+    head_hex=`od -N 6 -x ${file} | egrep "^0000000 bbef"`
+    if [ -n "${file_format_check}" -a -n "${head_hex}" ]; then                                                        
+        # has BOM                                                                                                                                                                                                                            
+        tmp_file="${file}.tmp"`date +%s`
+        cp ${file} ${tmp_file}
+        echo "dd bs=3 skip=1 if=${tmp_file} of=${file}"
+        dd bs=3 skip=1 if=${tmp_file} of=${file}
+                         
+        rm -f ${tmp_file}
+    fi
+done
