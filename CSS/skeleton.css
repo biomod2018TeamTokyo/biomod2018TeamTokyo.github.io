@@ -400,6 +400,7 @@ hr {
 .wiki-header {
   background: #000000;
   position: fixed;
+  z-index:999;
   margin: 0;
   width: 100%;
   text-align: center;
