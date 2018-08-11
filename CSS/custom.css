@@ -16,30 +16,31 @@ ul {
     font-size: 1.2em;
     padding: 0.5em 1em;
     text-decoration: none;
-    border-bottom: solid 4px #668ad8;
-    color: #668ad8;
-    background: #e1f3ff;
+    border-bottom: solid 4px #FF000F;
+    color: #FF000F;
+    background: #FF999F;
     transition: .4s;
 }
 
 
 .square_btn:hover {
-    background: #668ad8;
-    color: #FFF;
+    background: #FF000F;
+    color: #040404;
 }
 
 /* Wrap buttons when the screen is narrow */
+
 .fl_tw {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  color: #1da1f3;
+  color: #FF000F;
   font-size: 1.2px;
   text-decoration: none;
   }
 
 .fl_tw:hover {
-  color:#88daff;
+  color:#040404;
   transition: .5s;
 }
 
@@ -79,24 +80,6 @@ ul {
 .fl_tw2:hover {
   color:#88daff;
   transition: .5s;
-}
-
-/* Twitter */
-.fl_tw .twicon{
-  border-radius: 10px;
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  font-size: 35px;
-  line-height: 50px;
-  vertical-align: middle;
-  color: #FFF;
-  background: #1da1f3;
-}
-
-.fl_tw .twicon .fa {
-  line-height: 50px;
 }
 
 /* shrink image when the screen is narrow */
