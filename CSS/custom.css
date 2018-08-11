@@ -33,7 +33,7 @@ ul {
   display: inline-block;
   text-align: center;
   color: #1da1f3;
-  font-size: 54px;
+  font-size: px;
   text-decoration: none;
   }
 
@@ -99,7 +99,7 @@ ul {
 
 /* shrink image when the screen is narrow */
 img {
-     max-width: 100%;
+     max-width: 90%;
 }
 
 /* indent for class="indentback" */

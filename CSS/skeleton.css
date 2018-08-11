@@ -26,11 +26,6 @@
 - Media Queries
 */
 
-*{ 
-margin: 0px; 
-padding: 0px; 
-}
-
 /* Grid */
 .container {
   position: relative;

@@ -11,10 +11,11 @@ html {
 
 /* Remove default margin */
 
-body {
+body,
+header,
+footer {
   margin: 0;
 }
-
 /* HTML5 display definitions */
 
 /**
