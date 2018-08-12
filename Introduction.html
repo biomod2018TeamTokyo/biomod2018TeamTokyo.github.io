@@ -19,13 +19,13 @@
 --><script src="tinynav.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="github-prettify-theme.css">
-  <script src="site.js"></script><!--Smooth Scroll-->
+  <script src="site.js"></script><!--Smooth Scroll
 --><script>$(function(){
 		$('a[href^="#"]').click(function() {
-		var speed = 500;
+		var speed = 800;
 		var href= $(this).attr("href");
 		var target = $(href == "#" || href == "" ? 'html' : href);
-		var headerHeight =　 170;  //maxであることに注意
+		var headerHeight =　 180;  
 		var position = target.offset().top - headerHeight; //headerズレ補正
 		$('body,html').animate({scrollTop:position}, speed, 'swing');
 		return false;
@@ -36,7 +36,7 @@
 --><header class="wiki-header">
   <img src="images/headerphoto.jpg">
     <div class="navbar-spacer"></div>
-     <div class="container" style="max-height:22vh;">
+     <div class="container" style="max-height:22vh; padding-bottom:1rem">
       <nav class="navbar">
         <ul class="navbar-item" id="navigation">
           <li class="navbar-item"><a class="square_btn" href="index.html">Home</a></li>
