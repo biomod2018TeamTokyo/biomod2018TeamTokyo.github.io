@@ -131,12 +131,12 @@ select.tinynav option[selected] {
 
 /*Top of Page */
 #page_top{
-  width: 50px;
-  height: 50px;
+  width: 25vw;
+  height: 25vw;
   position: fixed;
   right: 0;
   bottom: 50px;
-  background: #cccccc;
+  background: #040404;
   opacity: 0.6;
   border-radius: 50%;
 }
@@ -146,8 +146,8 @@ select.tinynav option[selected] {
   background: #040404;
   color: #00EFFF;
   border-radius: 50%;
-  width: 20%;
-  height: 20%;
+  width: 25vw;
+  height: 25vw;
   text-decoration: none;
   text-align: center;
 }
