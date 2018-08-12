@@ -131,32 +131,33 @@ select.tinynav option[selected] {
 
 /*Top of Page */
 #page_top{
-  width: 25vw;
-  height: 25vw;
+  width: 12.5vw;
+  height: 12.5vw;
   position: fixed;
   right: 0;
   bottom: 50px;
-  background: #040404;
+  background: #000000;
   opacity: 0.6;
   border-radius: 50%;
 }
 #page_top a{
   position: relative;
   display: block;
-  background: #040404;
+  background: #000000;
   color: #00EFFF;
   border-radius: 50%;
-  width: 25vw;
-  height: 25vw;
+  width: 12.5vw;
+  height: 12.5vw;
+  font-size: 2.5vw;
   text-decoration: none;
   text-align: center;
 }
 #page_top a::before{
-  font-size: 13px;
+  font-size: 22px;
   color: #fff;
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 12.5px;
+  height: 12.5px;
   top: 0;
   bottom: 0;
   right: 0;
