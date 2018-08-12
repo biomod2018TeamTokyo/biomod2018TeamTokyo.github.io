@@ -51,6 +51,20 @@
         <ul class="navbar-item" id="nav">
           <li class="navbar-item"><a class="square_btn2" href="#Background">Background</a></li>
 	  <li class="navbar-item"><a class="square_btn2" href="#Project">Project</a></li></ul></nav></div>
+
+<script type="text/javascript">
+   $(function(){
+	$('a[href^=#]').click(function() {
+		var speed = 400;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var headerHeight =　 170;  
+		var position = target.offset().top - headerHeight; 
+		$('body,html').animate({scrollTop:position}, speed, 'swing');
+		return false;
+	});
+});
+</script>
 <!--Background-->
    <div class="container">
     <div class="docs-section" id="Background">
