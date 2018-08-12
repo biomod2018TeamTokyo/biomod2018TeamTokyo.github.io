@@ -110,7 +110,13 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
+/*　リンク内ジャンプのズレ解消*/
 
+.Background,
+.Project {
+  margin-top: -17rem;
+  padding-top:17rem;
+}
 
 /* Base Styles */
 /* NOTE
