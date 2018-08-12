@@ -397,6 +397,15 @@ hr {
   display: table;
   clear: both; }
 
+/* styles for desktop */
+.tinynav { display: none }
+
+/* styles for mobile */
+@media screen and (max-width: 600px) {
+   .tinynav { display: block }
+   #navigation { display: none }
+}
+
 .wiki-header {
   background: #000000;
   position: fixed;
