@@ -44,25 +44,25 @@ ul {
   transition: .5s;
 }
 
-/* Link Button (Page top) */
+/* Link Button (小項目用) */
 
 .square_btn2{
     position: relative;
     display: inline-block;
     font-weight: bold;
-    font-size: 1.2em;
-    padding: 0.5em 1em;
+    font-size: 1.3em;
+    padding: 0.5em 1.2em;
     text-decoration: none;
-    border-bottom: solid 4px #FF000F;
-    color: #3D0085;
-    background: #FFD2CC;
+    border-bottom: solid 4.5px #FF6000;
+    color: #FF6000;
+    background: #９９９９９９;
     transition: .4s;
 }
 
 
 .square_btn2:hover {
-    background: #FF000F;
-    color: #040404;
+    background: #FF6000;
+    color: #3D0085;
 }
 
 /* Wrap buttons when the screen is narrow */
@@ -71,13 +71,13 @@ ul {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  color: #FF000F;
-  font-size: 1.2px;
+  color: #FF6000;
+  font-size: 1.3px;
   text-decoration: none;
   }
 
 .fl_tw2:hover {
-  color:#040404;
+  color:#3D0085;
   transition: .5s;
 }
 
