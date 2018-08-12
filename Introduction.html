@@ -19,7 +19,18 @@
 --><script src="tinynav.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="github-prettify-theme.css">
-  <script src="site.js"></script>
+  <script src="site.js"></script><!--Smooth Scroll-->
+--><script>$(function(){
+		$('a[href^="#"]').click(function() {
+		var speed = 500;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var headerHeight =　 170;  //maxであることに注意
+		var position = target.offset().top - headerHeight; //headerズレ補正
+		$('body,html').animate({scrollTop:position}, speed, 'swing');
+		return false;
+		});
+	   });</script>
 </head>
 <body class="code-snippets-visible"><!--
 --><header class="wiki-header">
