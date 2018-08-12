@@ -61,7 +61,7 @@ ul {
 
 
 .square_btn2:hover {
-    border-bottom: solid 4.5px #3D0085
+    border-bottom: solid 4.5px #3D0085;
     background: #3D0085;
     color: #00EFFF;
 }
