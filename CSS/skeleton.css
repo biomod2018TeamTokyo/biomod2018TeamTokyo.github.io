@@ -112,8 +112,8 @@
 }
 /*　リンク内ジャンプのズレ解消*/
 
-.Background,
-.Project {
+#Background,
+#Project {
   margin-top: -17rem;
   padding-top:17rem;
 }
