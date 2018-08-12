@@ -81,7 +81,18 @@ ul {
   transition: .5s;
 }
 
-/
+/*pull down menu */
+select.tinynav {
+   font-size: 1.5em;        
+   width: 50%;               
+   background-color: #FFD2CC; 
+   border: 1px solid #FFD2CC; 
+   color: #3D0085;
+}
+select.tinynav option[selected] {
+   background-color: #ff000f; 
+   color: #040404;              
+}
 /* Link Button （小項目）*/
 .square_btn3{
     position: relative;
