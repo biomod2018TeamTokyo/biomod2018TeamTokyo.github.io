@@ -144,10 +144,12 @@ select.tinynav option[selected] {
   position: relative;
   display: block;
   background: #000000;
-  color: #00EFFF;
+  color: #00FFFF;
   border-radius: 50%;
-  width: 12.5vw;
-  height: 12.5vw;
+  width: 12vw;
+  height: 12vw;
+  line-height:12vw;
+  verticle-align:middle;
   font-size: 2.5vw;
   text-decoration: none;
   text-align: center;
@@ -156,8 +158,8 @@ select.tinynav option[selected] {
   font-size: 22px;
   color: #fff;
   position: absolute;
-  width: 12.5px;
-  height: 12.5px;
+  width: 12px;
+  height: 12px;
   top: 0;
   bottom: 0;
   right: 0;
