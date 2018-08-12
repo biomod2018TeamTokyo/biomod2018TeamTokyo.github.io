@@ -408,7 +408,7 @@ hr {
 
 /* styles for mobile */
 @media screen and (max-width: 600px) {
-   .tinynav { display: block }
+   .tinynav { display: none }
    #navigation { display: none }
 }
 
