@@ -130,7 +130,7 @@ select.tinynav option[selected] {
   }
 
 /*Top of Page */
-.page_top{
+#page_top{
   width: 50px;
   height: 50px;
   position: fixed;
@@ -140,14 +140,14 @@ select.tinynav option[selected] {
   opacity: 0.6;
   border-radius: 50%;
 }
-.page_top a{
+#page_top a{
   position: relative;
   display: inline-block;
   width: 50px;
   height: 50px;
   text-decoration: none;
 }
-.page_top a::before{
+#page_top a::before{
   font-size: 13px;
   color: #fff;
   position: absolute;
