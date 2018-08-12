@@ -136,16 +136,19 @@ select.tinynav option[selected] {
   position: fixed;
   right: 0;
   bottom: 50px;
-  background: #040404;
+  background: #cccccc;
   opacity: 0.6;
   border-radius: 50%;
 }
 #page_top a{
   position: relative;
-  display: inline-block;
+  display: block;
+  background: #cccccc;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   text-decoration: none;
+  text-align: center;
 }
 #page_top a::before{
   font-size: 13px;
