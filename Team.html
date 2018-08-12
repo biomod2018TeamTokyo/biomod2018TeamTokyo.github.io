@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>TEAM TOKYO</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Basic Page Needs -->
+  <meta charset="UTF-8N"><!---
+--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--
+--><title>BIOMOD 2018 TEAM TOKYO　</title>
+  <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"　type="text/css">
+  <!-- CSS -->
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/skeleton.css">
   <link rel="stylesheet" href="CSS/custom.css">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!--
+--><script src="tinynav.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="github-prettify-theme.css">
   <script src="site.js"></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/ico" href="favicon.ico">
-
 </head>
-<body class="code-snippets-visible">
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-
+<body class="code-snippets-visible"><!--
+--><header class="wiki-header">
+  <img src="images/headerphoto.jpg">
     <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-	  <li class="navbar-item"><a class="square_btn" href="index.html">Top</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Background.html">Background</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Project.html">Project</a></li>
+     <div class="container" style="max-height:22vh; margin-bottom:1rem">
+      <nav class="navbar">
+        <ul class="navbar-item" id="navigation">
+          <li class="navbar-item"><a class="square_btn" href="index.html">Home</a></li>
+	 <li class="navbar-item"><a class="square_btn3" href="Introduction.html">Introduction</a></li>
           <li class="navbar-item"><a class="square_btn" href="Design.html">Design</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Protocol.html">Protocol</a></li>
+	  <li class="navbar-item"><a class="square_btn" href="Protocol.html">Protocol</a></li>
           <li class="navbar-item"><a class="square_btn" href="Result.html">Results</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Discussion.html">Discussion</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Future.html">Future</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="ELSI.html">ELSI</a></li>
-	<li class="navbar-item"><a class="square_btn" href="Team.html">Team</a></li>
-        </ul>
-      </div>
-    </nav>
+	  <li class="navbar-item"><a class="square_btn" href="Discussion.html">Discussion</a></li>
+	  <li class="navbar-item"><a class="square_btn" href="Future.html">Future</a></li>
+     <li class="navbar-item"><a class="square_btn" href="ELSI.html">ELSI</a></li>
+          <li class="selected"><a class="square_btn3" href="Team.html">Team</a></li></ul></nav></div>
+ </header>
 
-<!-- Background text                                                                                                              
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="Team" class="text">
-  <h2>Team</h2>
- <p>Members</p>
+<script type="text/javascript">
+  $(function () {
+    $("#navigation").tinyNav();
+  });
+</script>
+<!--Team-->
+  <div id="Team" class="text">
+    <h2>Team</h2>
+ 	<p>Members</p>
 	
 	<p>Mentors</p>
-				<div class="row">
-				<div class="columns two">
-					<img src="images/shu.jpg">
-				</div>
-				<div class="columns four">
-					<h4>Shu Okumura</h4>
-					<p>The University of Tokyo, Bioengineering <br>D1</p>
-				</div>
-<!-- Add fig.  <div class="row">
-    <img src="">
-    </div>
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</div>
-
-
-<!-- End Document
-  ?????????????????????????????????????????????????? -->
+	   <div class="row">
+		<div class="columns two">
+			<img src="images/shu.jpg">
+		</div>
+		<div class="columns four">
+			<h4>Shu Okumura</h4>
+				<p>The University of Tokyo, Bioengineering <br>D1</p>
+		</div>
+	   </div>
+  </div>
+<!-- End Document-->
+ <footer style="background-color:#EDF7FF;">
+	<center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
+ </footer>
 </body>
 </html>
