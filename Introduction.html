@@ -36,7 +36,23 @@
 		$('body,html').animate({scrollTop:position}, speed, 'swing');
 		return false;
 		});
-	   });</script>
+	   });</script><!--Top of Page
+--><script>$(function() {
+    var pagetop = $('#page_top');
+    var speed = 800;
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 190) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({scrollTop: 0}, speed, 'swing'); 
+        return false;
+    });
+   });</script>
 </head>
 <body class="code-snippets-visible"><!--
 --><header class="wiki-header">
@@ -86,6 +102,8 @@
     </div>
    </div>
   </div>
+<!-- Top of Page:Button -->
+<div id="page_top"><a href="#"></a></div>
 <!-- End Document-->
  <footer style="background-color:#EDF7FF;">
 	<center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
