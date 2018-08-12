@@ -107,6 +107,16 @@ select.tinynav option[selected] {
     transition: .4s;
 }
 
+.square_btn3:hover {
+    background: #FF000F;
+    color: #040404;
+}
+
+.fl_tw3:hover {
+  color:#040404;
+  transition: .5s;
+}
+
 /* Wrap buttons when the screen is narrow */
 .fl_tw3 {
   text-decoration: none;
