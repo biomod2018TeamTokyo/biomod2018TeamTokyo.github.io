@@ -25,7 +25,13 @@
 		var speed = 800;
 		var href= $(this).attr("href");
 		var target = $(href == "#" || href == "" ? 'html' : href);
-		var headerHeight =　 180;  
+		var nw = $(window).width();
+		var kw = 600;
+		if (nw > kw){
+			var headerHeight =　 180;
+		} else {
+			var headerHeight = 120;
+		}
 		var position = target.offset().top - headerHeight; //headerズレ補正
 		$('body,html').animate({scrollTop:position}, speed, 'swing');
 		return false;
