@@ -88,6 +88,7 @@ select.tinynav {
    background-color: #FFD2CC; 
    border: 1px solid #FFD2CC; 
    color: #3D0085;
+   padding-bottom: 3em;
 }
 select.tinynav option[selected] {
    background-color: #ff000f; 
