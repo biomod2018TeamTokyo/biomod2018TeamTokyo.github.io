@@ -143,10 +143,11 @@ select.tinynav option[selected] {
 #page_top a{
   position: relative;
   display: block;
-  background: #cccccc;
+  background: #040404;
+  color: #00EFFF;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 20%;
+  height: 20%;
   text-decoration: none;
   text-align: center;
 }
