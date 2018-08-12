@@ -53,16 +53,16 @@ ul {
     font-size: 1.3em;
     padding: 0.5em 1.2em;
     text-decoration: none;
-    border-bottom: solid 4.5px #FF6000;
-    color: #FF6000;
+    border-bottom: solid 4.5px #000000;
+    color: #000000;
     background: #CCCCCC;
     transition: .4s;
 }
 
 
 .square_btn2:hover {
-    background: #FF6000;
-    color: #3D0085;
+    background: #3D0085;
+    color: #00EFFF;
 }
 
 /* Wrap buttons when the screen is narrow */
@@ -71,13 +71,13 @@ ul {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  color: #FF6000;
+  color: #000000;
   font-size: 1.3px;
   text-decoration: none;
   }
 
 .fl_tw2:hover {
-  color:#3D0085;
+  color:#000000;
   transition: .5s;
 }
 
