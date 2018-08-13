@@ -2,59 +2,83 @@
 <html lang="en">
 
 <head>
-
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>TEAM TOKYO</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8N">
+    <!---
+-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+-->
+    <title>BIOMOD 2018 TEAM TOKYO　</title>
+    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" 　type="text/css">
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/skeleton.css">
     <link rel="stylesheet" href="CSS/custom.css">
-
-    <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--
+-->
+    <script src="tinynav.min.js"></script>
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="github-prettify-theme.css">
     <script src="site.js"></script>
-
-    <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/ico" href="favicon.ico">
-
+    <!--Smooth Scroll
+-->
+    <script>$(function () {
+            $('a[href^="#"]').click(function () {
+                var speed = 800;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var nw = $(window).width();
+                var kw = 600;
+                if (nw > kw) {
+                    var headerHeight = 180;
+                } else {
+                    var headerHeight = 120;
+                }
+                var position = target.offset().top - headerHeight; //headerズレ補正
+                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
+        });</script>
+    <!--Top of Page
+-->
+    <script>$(function () {
+            var pagetop = $('#page_top');
+            var speed = 800;
+            pagetop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 190) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body,html').animate({ scrollTop: 0 }, speed, 'swing');
+                return false;
+            });
+        });</script>
 </head>
 
 <body class="code-snippets-visible">
-
-    <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-
+    <!--
+-->
+    <header class="wiki-header">
+        <img src="images/headerphoto.jpg">
         <div class="navbar-spacer"></div>
-        <nav class="navbar">
-            <div class="container">
-                <ul class="navbar-list">
+        <div class="container" style="max-height:22vh; margin-bottom:1rem">
+            <nav class="navbar">
+                <ul class="navbar-item" id="navigation">
                     <li class="navbar-item">
-                        <a class="square_btn" href="index.html">Top</a>
+                        <a class="square_btn" href="index.html">Home</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="square_btn" href="Background.html">Background</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="square_btn" href="Project.html">Project</a>
+                        <a class="square_btn" href="Introduction.html">Introduction</a>
                     </li>
                     <li class="navbar-item">
                         <a class="square_btn" href="Design.html">Design</a>
@@ -65,8 +89,8 @@
                     <li class="navbar-item">
                         <a class="square_btn" href="Result.html">Results</a>
                     </li>
-                    <li class="navbar-item">
-                        <a class="square_btn" href="Discussion.html">Discussion</a>
+                    <li class="selected">
+                        <a class="square_btn3" href="Discussion.html">Discussion</a>
                     </li>
                     <li class="navbar-item">
                         <a class="square_btn" href="Future.html">Future</a>
@@ -78,20 +102,35 @@
                         <a class="square_btn" href="Team.html">Team</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#navigation").tinyNav();
+        });
+    </script>
+    <!-- SubMenu -->
+    <div class="container" style="padding-top:17rem;">
+        <nav class="navbar">
+            <ul class="navbar-item" id="nav">
+                <li class="navbar-item">
+                    <a class="square_btn2" href="#Background">Background</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="square_btn2" href="#Project">Project</a>
+                </li>
+            </ul>
         </nav>
+    </div>
 
-        <!-- Result text                                                                                                              
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="Result" class="text">
-            <h2>Discussion</h2>
-
-
-
-
-
-
-
+    <!--Discussion-->
+    <div class="container">
+        <div class="docs-section" id="Discussion">
+            <h2 class="docs-header">
+                <b>Discussion</b>
+            </h2>
 
 
             <h3>Simulation</h3>
@@ -142,16 +181,17 @@
 
 
 
-            <div class="row">
-                <img src="">
-            </div>
         </div>
-        <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-
-        <!-- End Document
-  ?????????????????????????????????????????????????? -->
+        <!-- Top of Page:Button -->
+        <div id="page_top">
+            <a href="#">Page Top</a>
+        </div>
+        <!-- End Document-->
+        <footer style="background-color:#EDF7FF;">
+            <center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
+        </footer>
 </body>
 
 </html>

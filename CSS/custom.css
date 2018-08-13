@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "utf-8n";
 
 /* Erase the circle before the list */
 ul {
@@ -13,90 +13,159 @@ ul {
     position: relative;
     display: inline-block;
     font-weight: bold;
+    font-size: 1.2em;
     padding: 0.5em 1em;
     text-decoration: none;
-    border-bottom: solid 4px #668ad8;
-    color: #668ad8;
-    background: #e1f3ff;
+    border-bottom: solid 4px #FF000F;
+    color: #3D0085;
+    background: #FFD2CC;
     transition: .4s;
 }
 
 
 .square_btn:hover {
-    background: #668ad8;
-    color: #FFF;
+    background: #FF000F;
+    color: #040404;
 }
 
 /* Wrap buttons when the screen is narrow */
+
 .fl_tw {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  color: #1da1f3;
-  font-size: px;
+  color: #FF000F;
+  font-size: 1.2px;
   text-decoration: none;
   }
 
 .fl_tw:hover {
-  color:#88daff;
+  color:#040404;
   transition: .5s;
 }
 
-/* Link Button （小項目）*/
+/* Link Button (小項目用) */
+
 .square_btn2{
     position: relative;
     display: inline-block;
     font-weight: bold;
-    padding: 0.5em 1em;
+    font-size: 1.3em;
+    padding: 0.5em 1.2em;
     text-decoration: none;
-    border-left: solid 4px #ffd000;
-    border-right: solid 4px #ffd000;
-    border-top:solid 4px #ffd000;
-    border-bottom:solid 4px #ffd000;
-    color: #668ad8;
-    background: #ffff8c;
+    border-bottom: solid 4.5px #000000;
+    color: #000000;
+    background: #CCCCCC;
     transition: .4s;
 }
 
 
 .square_btn2:hover {
-    background: #ddf000;
-    color: #000000;
+    border-bottom: solid 4.5px #3D0085;
+    background: #3D0085;
+    color: #00EFFF;
 }
 
 /* Wrap buttons when the screen is narrow */
+
 .fl_tw2 {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  color: #1fdfa3;
-  font-size: 36px;
+  color: #000000;
+  font-size: 1.3px;
   text-decoration: none;
   }
 
 .fl_tw2:hover {
-  color:#88daff;
+  color:#000000;
   transition: .5s;
 }
 
-/* Twitter */
-.fl_tw .twicon{
-  border-radius: 10px;
-  position: relative;
+/*pull down menu */
+select.tinynav {
+   font-size: 1.5em;        
+   width: 50%;               
+   background-color: #FFD2CC; 
+   border: 1px solid #FFD2CC; 
+   color: #3D0085;
+   padding-bottom: 50px;
+}
+select.tinynav option[selected] {
+   background-color: #ff000f; 
+   color: #040404;              
+}
+/* Link Button （現在地表示用）*/
+.square_btn3{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-bottom:solid 4px #ff000f;
+    color: #040404;
+    background: #ff000f;
+    transition: .4s;
+}
+
+.square_btn3:hover {
+    background: #FF000F;
+    color: #040404;
+}
+
+.fl_tw3:hover {
+  color:#040404;
+  transition: .5s;
+}
+
+/* Wrap buttons when the screen is narrow */
+.fl_tw3 {
+  text-decoration: none;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  font-size: 35px;
-  line-height: 50px;
-  vertical-align: middle;
-  color: #FFF;
-  background: #1da1f3;
-}
+  text-align: center;
+  color: #040404;
+  font-size: 1.2em;
+  text-decoration: none;
+  }
 
-.fl_tw .twicon .fa {
-  line-height: 50px;
+/*Top of Page */
+#page_top{
+  width: 10vw;
+  height: 10vw;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  background: #000000;
+  opacity: 0.6;
+  border-radius: 50%;
 }
-
+#page_top a{
+  position: relative;
+  display: block;
+  background: #000000;
+  color: #00FFFF;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  line-height:10vw;
+  verticle-align:middle;
+  font-size: 2vw;
+  text-decoration: none;
+  text-align: center;
+}
+#page_top a::before{
+  font-size: 2vw;
+  color: #fff;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
 /* shrink image when the screen is narrow */
 img {
      max-width: 90%;
@@ -106,4 +175,20 @@ img {
 p.indentback{
   text-indent: -1em;
   padding-left: 2em;
+}
+
+/* highlight the head line */
+h2 {
+border-bottom: solid 4.5px #cccccc;
+}
+
+/* table style */
+table, th, td {
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+caption{
+ white-space: nowrap;
 }
