@@ -19,7 +19,23 @@
 --><script src="tinynav.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="github-prettify-theme.css">
-  <script src="site.js"></script>
+  <script src="site.js"></script><!--Top of Page
+--><script>$(function () {
+            var pagetop = $('#page_top');
+            var speed = 800;
+            pagetop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 190) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body,html').animate({ scrollTop: 0 }, speed, 'swing');
+                return false;
+            });
+        });</script>
 </head>
 <body class="code-snippets-visible"><!--
 --><header class="wiki-header">
@@ -43,24 +59,27 @@
     $("#navigation").tinyNav();
   });
 </script>
-
 <!--ELSI-->
    <div class="container" style="padding-top:17rem;">
     <div class="docs-section" id="ELSI">
       <h2 class="docs-header"><b>ELSI</b></h2>
      <p> Recently, Multidrug-resistant bacteria and toxin produced by pathogen are widely feared all over the world. Creation and expansion of these hazardous substances are accelerated partly by horizontal gene transfer(HGT), which means that the bacteria imports extracellular genome. HGT can be separated into three phases; 1, DNA which may be imported into bacterium are produced and spread. 2, Extracellular DNA stably exists. 3, DNA are imported by the bacterium. To discuss the safety of our experiment, the possibility of these three phases were considered.</p>
-     <p>Phase 1: DNA which may be imported into bacterium are produced and spread<br>Our study collects strands. Therefore, DNA will not spread and our experiment brings no damage to the environment. However, if the collecting system collapses, DNA strands can be released and we may have to consider genetic mutation of bacteria.</p>
-     <p>Phase 2: Extracellular DNA stably exists<br>
-     In aquatic ecosystems, it takes only several hours to a week for extracellular enzymes such as DNase to metabolize extracellular DNA. Also, under poor phosphorus or poor nitrogen environment, extracellular DNAs are immediately used as nutrients. This shows that DNAs cannot exist long time in many natural environments. However, there are some environment in which DNAs are stable and exist longer. For example, DNAs adsorbed on clay particles in aquatic ecosystems or on soil fractions in soil ecosystems are hard to metabolize. Also, under a low-temperature environment such as the bottom water layer of lakes, DNAs are relatively stable.</p>
-     <p>Phase 3: DNA are imported by the bacterium<br>In natural environments, there are many bacteria which can import extracellular DNAs without human treatment. For example, around one out of ten bacteria living in the sea possesses this ability.</p>
+     <h5>Phase 1: DNA which may be imported into bacterium are produced and spread</h5><p>Our study collects strands. Therefore, DNA will not spread and our experiment brings no damage to the environment. However, if the collecting system collapses, DNA strands can be released and we may have to consider genetic mutation of bacteria.</p>
+     <h5>Phase 2: Extracellular DNA stably exists</h5>
+     <p>In aquatic ecosystems, it takes only several hours to a week for extracellular enzymes such as DNase to metabolize extracellular DNA. Also, under poor phosphorus or poor nitrogen environment, extracellular DNAs are immediately used as nutrients. This shows that DNAs cannot exist long time in many natural environments. However, there are some environment in which DNAs are stable and exist longer. For example, DNAs adsorbed on clay particles in aquatic ecosystems or on soil fractions in soil ecosystems are hard to metabolize. Also, under a low-temperature environment such as the bottom water layer of lakes, DNAs are relatively stable.</p>
+     <h5>Phase 3: DNA are imported by the bacterium</h5><p>In natural environments, there are many bacteria which can import extracellular DNAs without human treatment. For example, around one out of ten bacteria living in the sea possesses this ability.</p>
      <p>These discussions lead us to following conclusion.</p><p>If our waste reaches the environment where DNAs are hardly metabolized such as cold lakes as we discussed in Phase 2, bacteria may import the DNA and mutant strains may be produced as we discussed in Phase 3. However, this can be avoided by the proper processing of waste. </p>
      <p>On the other hand, when we carry out experiment In vivo in the future, we have to consider safety, because there is an example that intestinal bacteria of the Japanese attained enzyme which can metabolize algae.</p>
-     <p>Reference<br>
+     <p><b>Reference</b><br>
       [1] Aminov, R. I. (2011) Horizontal gene exchange in envi- ronmental microbiota. Front. Microbiol., 2, doi:10.3389/fmicb.2011.00158. <br>
       [2]松井 一彰 (2015) 微生物生態系における細菌の遺伝子水平伝播現象 Jpn. J. Protozool. Vol. 48, No. 1, 2. <br>
       [3] Hehemann, J.-H.  et al. (2010)Nature 464, 908-912</p>
     </div>
-   </div>	   
+   </div>
+<!-- Top of Page:Button -->
+        <div id="page_top">
+            <a href="#">Page Top</a>
+        </div>
 <!-- End Document-->
  <footer style="background-color:#EDF7FF;">
 	<center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
