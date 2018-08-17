@@ -3,431 +3,515 @@
 
 <head>
   <!-- Basic Page Needs -->
-  <meta charset="UTF-8N"><!---
---><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--
---><title>BIOMOD 2018 TEAM TOKYO　</title>
+  <meta charset="UTF-8N">
+  <!---
+-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+-->
+  <title>BIOMOD 2018 TEAM TOKYO　</title>
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"　type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" 　type="text/css">
   <!-- CSS -->
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/skeleton.css">
   <link rel="stylesheet" href="CSS/custom.css">
   <!-- Script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!--
---><script src="tinynav.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!--
+-->
+  <script src="tinynav.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="github-prettify-theme.css">
-  <script src="site.js"></script><!--Smooth Scroll
---><script>$(function(){
-		$('a[href^="#"]').click(function() {
-		var speed = 800;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var nw = $(window).width();
-		var kw = 600;
-		if (nw > kw){
-			var headerHeight =　 180;
-		} else {
-			var headerHeight = 120;
-		}
-		var position = target.offset().top - headerHeight; //headerズレ補正
-		$('body,html').animate({scrollTop:position}, speed, 'swing');
-		return false;
-		});
-	   });</script><!--Top of Page
---><script>$(function() {
-    var pagetop = $('#page_top');
-    var speed = 800;
-    pagetop.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 190) {
-            pagetop.fadeIn();
+  <script src="site.js"></script>
+  <!--Smooth Scroll
+-->
+  <script>$(function () {
+      $('a[href^="#"]').click(function () {
+        var speed = 800;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var nw = $(window).width();
+        var kw = 600;
+        if (nw > kw) {
+          var headerHeight = 180;
         } else {
-            pagetop.fadeOut();
+          var headerHeight = 120;
         }
-    });
-    pagetop.click(function () {
-        $('body,html').animate({scrollTop: 0}, speed, 'swing'); 
+        var position = target.offset().top - headerHeight; //headerズレ補正
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
         return false;
-    });
-   });</script>
+      });
+    });</script>
+  <!--Top of Page
+-->
+  <script>$(function () {
+      var pagetop = $('#page_top');
+      var speed = 800;
+      pagetop.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 190) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body,html').animate({ scrollTop: 0 }, speed, 'swing');
+        return false;
+      });
+    });</script>
 </head>
-<body class="code-snippets-visible"><!--
---><header class="wiki-header">
-  <img src="images/headerphoto.jpg">
+
+<body class="code-snippets-visible">
+  <!--
+-->
+  <header class="wiki-header">
+    <img src="images/headerphoto.jpg">
     <div class="navbar-spacer"></div>
-     <div class="container" style="max-height:22vh; margin-bottom:1rem">
+    <div class="container" style="max-height:22vh; margin-bottom:1rem">
       <nav class="navbar">
         <ul class="navbar-item" id="navigation">
-          <li class="navbar-item"><a class="square_btn" href="index.html">Home</a></li>
-	 <li class="navbar-item"><a class="square_btn" href="Introduction.html">Introduction</a></li>
-	  <li class="selected"><a class="square_btn3" href="Method.html">Method</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Result.html">Results</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="Discussion.html">Discussion</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="Future.html">Future</a></li>
-     <li class="navbar-item"><a class="square_btn" href="ELSI.html">ELSI</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Team.html">Team</a></li></ul></nav></div>
- </header>
+          <li class="navbar-item">
+            <a class="square_btn" href="index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Introduction.html">Introduction</a>
+          </li>
+          <li class="selected">
+            <a class="square_btn3" href="Method.html">Method</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Result.html">Results</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Discussion.html">Discussion</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Future.html">Future</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="ELSI.html">ELSI</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Team.html">Team</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<script type="text/javascript">
-  $(function () {
-    $("#navigation").tinyNav();
-  });
-</script>
-<!-- SubMenu -->
-     <div class="container" style="padding-top:17rem;">
-      <nav class="navbar">
-        <ul class="navbar-item" id="nav">
-          <li class="navbar-item"><a class="square_btn2" href="#Design">Design</a></li>
-	  <li class="navbar-item"><a class="square_btn2" href="#Simulation">Simulation</a></li>
-	  <li class="navbar-item"><a class="square_btn2" href="#Protocol">Protocol</a></li></ul></nav></div>
-<!--design-->
-   <div class="container">
-    <div class="docs-section" id="Design">
-      <h2 class="docs-header"><b>Design</b></h2>
-     <p>The following figures show the sequence motif of the DNA and their nucleotide sequences. The small letters of a, b, c, … mean each motif, and letters with prime mean complementary sequences.
-     </p>
-    </div>
-
-<!-- Simulation -->
-    <div class="docs-section" id="Simulation"> <h2 class="docs-header"><b>Simulation</b></h2>
-    <p>Using the NUPACK, the software for the analysis and the design of sequences, the states of the combinations of the above sequences was calculated.</p>
-    </div>
-		  
-<!-- Protocol -->
-    <div class="docs-section" id="Protocol"> <h2 class="docs-header"><b>Protocol</b></h2>
-    <h4>a. Effect of NaCl (Melting Curve) </h4><p> Based on the melting curve, the change of the ratio of double-strand was measured along the temperature fall, and the effect of NaCl on the formation of the gels was estimated.<br>
-    <table>
- <style></style></table>
- <table>
-  <tr>
-   <td></td>
-   <td>1</td>
-   <td>2</td>
-   <td>3</td>
-   <td>4</td>
-  </tr>
-  <tr>
-   <td>TE Buffer</td>
-   <td>4.5</td>
-   <td>4.5</td>
-   <td>4.5</td>
-   <td>4.5</td>
-  </tr>
-  <tr>
-   <td>H1(1mM)</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-  </tr>
-  <tr>
-   <td>H2(1mM)</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-  </tr>
-  <tr>
-   <td>I_H(1mM)</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-  </tr>
-  <tr>
-   <td>EvaGreen</td>
-   <td>0.5</td>
-   <td>0.5</td>
-   <td>0.5</td>
-   <td>0.5</td>
-  </tr>
-  <tr>
-   <td>NaCl</td>
-   <td>125mM: 2</td>
-   <td>250mM: 2</td>
-   <td>500mM: 2</td>
-   <td>1000mM: 2</td>
-  </tr>
-  <tr>
-   <td>Total(µL)</td>
-   <td>10</td>
-   <td>10</td>
-   <td>10</td>
-   <td>10</td>
-  </tr>
- </table>
-</p>
-<h4> b. Combination of strands (Electrophoresis) </h4><p>The states of the combinations were estimated based on the result of electrophoresis.<br>
-<table>
- <style></style></table>
- <table>
-  <tr>
-   <td></td>
-   <td>1</td>
-   <td>2</td>
-   <td>3</td>
-   <td>4</td>
-   <td>5</td>
-   <td>6</td>
-   <td>7</td>
-  </tr>
-  <tr>
-   <td>TE Buffer</td>
-   <td>7.9</td>
-   <td>7.9</td>
-   <td>7.9</td>
-   <td>7.9</td>
-   <td>7.9</td>
-   <td>7.9</td>
-   <td>7.9</td>
-  </tr>
-  <tr>
-   <td>NaCl(5M)</td>
-   <td>0.3</td>
-   <td>0.3</td>
-   <td>0.3</td>
-   <td>0.3</td>
-   <td>0.3</td>
-   <td>0.3</td>
-   <td>0.3</td>
-  </tr>
-  <tr>
-   <td>H1(10µM)</td>
-   <td>0.6</td>
-   <td>0.6</td>
-   <td>0</td>
-   <td>0.6</td>
-   <td>0</td>
-   <td>0.6</td>
-   <td>0</td>
-  </tr>
-  <tr>
-   <td>H2(10µM)</td>
-   <td>0.6</td>
-   <td>0.6</td>
-   <td>0.6</td>
-   <td>0</td>
-   <td>0.6</td>
-   <td>0</td>
-   <td>0</td>
-  </tr>
-  <tr>
-   <td>I_H(10µM)</td>
-   <td>0.6</td>
-   <td>0</td>
-   <td>0.6</td>
-   <td>0.6</td>
-   <td>0</td>
-   <td>0</td>
-   <td>0.6</td>
-  </tr>
-  <tr>
-   <td>Loading Buffer</td>
-   <td>2</td>
-   <td>2</td>
-   <td>2</td>
-   <td>2</td>
-   <td>2</td>
-   <td>2</td>
-   <td>2</td>
-  </tr>
-  <tr>
-   <td>Water</td>
-   <td>0</td>
-   <td>0.6</td>
-   <td>0.6</td>
-   <td>0.6</td>
-   <td>1.2</td>
-   <td>1.2</td>
-   <td>1.2</td>
-  </tr>
-  <tr>
-   <td>Total(µL)</td>
-   <td>12</td>
-   <td>12</td>
-   <td>12</td>
-   <td>12</td>
-   <td>12</td>
-   <td>12</td>
-   <td>12</td>
-  </tr>
- </table>
-</p>
-<h4> c. Change of [I_H] (Melting Curve)</h4> <p>Based on the melting curve, the change of the ratio of double-strand was measured along the temperature fall, and the effect of concentration of I_H on the formation of the gels was estimated.<br>
-<table>
- <style></style></table>
- <table>
-  <tr>
-   <td></td>
-   <td>1</td>
-   <td>2</td>
-   <td>3</td>
-   <td>4</td>
-   <td>5</td>
-  </tr>
-  <tr>
-   <td>TE Buffer</td>
-   <td>3.6</td>
-   <td>3.6</td>
-   <td>3.6</td>
-   <td>3.6</td>
-   <td>3.6</td>
-  </tr>
-  <tr>
-   <td>H1(1mM)</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-  </tr>
-  <tr>
-   <td>H2(1mM)</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-  </tr>
-  <tr>
-   <td>NaCl(500mM)</td>
-   <td>1.6</td>
-   <td>1.6</td>
-   <td>1.6</td>
-   <td>1.6</td>
-   <td>1.6</td>
-  </tr>
-  <tr>
-   <td>EvaGreen</td>
-   <td>0.4</td>
-   <td>0.4</td>
-   <td>0.4</td>
-   <td>0.4</td>
-   <td>0.4</td>
-  </tr>
-  <tr>
-   <td>Beacon</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-   <td>0.8</td>
-  </tr>
-  <tr>
-   <td>I_H</td>
-   <td>0</td>
-   <td>100µM: 0.5</td>
-   <td>100µM: 1</td>
-   <td>100µM: 2</td>
-   <td>1mM: 0.5</td>
-  </tr>
-  <tr>
-   <td>Water</td>
-   <td>2</td>
-   <td>1.5</td>
-   <td>1</td>
-   <td>0</td>
-   <td>1.5</td>
-  </tr>
-  <tr>
-   <td>Total(µL)</td>
-   <td>10</td>
-   <td>10</td>
-   <td>10</td>
-   <td>10</td>
-   <td>10</td>
-  </tr>
- </table>
-</p>
-<h4> d. Change of [Mg<sup>2+</sup>] (Melting Curve &amp; Electrophoresis) </h4> <p>Based on the melting curve and the result of electrophoresis, the effect of the concentration of Mg 2+ on the formation of the gels was estimated.<br>
-<table>
- <style></style></table>
- <table>
-  <tr>
-   <td></td>
-   <td>1</td>
-   <td>2</td>
-   <td>3</td>
-   <td>4</td>
-  </tr>
-  <tr>
-   <td>TE Buffer</td>
-   <td>4.5</td>
-   <td>4.5</td>
-   <td>4.5</td>
-   <td>4.5</td>
-  </tr>
-  <tr>
-   <td>EvaGreen</td>
-   <td>0.5</td>
-   <td>0.5</td>
-   <td>0.5</td>
-   <td>0.5</td>
-  </tr>
-  <tr>
-   <td>H1(1mM)</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-  </tr>
-  <tr>
-   <td>H2(1mM)</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-  </tr>
-  <tr>
-   <td>I_H(100µM)</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-   <td>1</td>
-  </tr>
-  <tr>
-   <td>MgSO<sub>4</sub>(100mM)</td>
-   <td>0</td>
-   <td>0.5</td>
-   <td>1</td>
-   <td>2</td>
-  </tr>
-  <tr>
-   <td>Loading Buffer</td>
-   <td>2</td>
-   <td>2</td>
-   <td>2</td>
-   <td>2</td>
-  </tr>
-  <tr>
-   <td>Water</td>
-   <td>2</td>
-   <td>1.5</td>
-   <td>1</td>
-   <td>0</td>
-  </tr>
-  <tr>
-   <td>Total(µL)</td>
-   <td>10</td>
-   <td>10</td>
-   <td>10</td>
-   <td>10</td>
-  </tr>
- </table>
-</p>
-    </div>
-    </div>
-   </div>
+  <script type="text/javascript">
+    $(function () {
+      $("#navigation").tinyNav();
+    });
+  </script>
+  <!-- SubMenu -->
+  <div class="container" style="padding-top:17rem;">
+    <nav class="navbar">
+      <ul class="navbar-item" id="nav">
+        <li class="navbar-item">
+          <a class="square_btn2" href="#Design">Design</a>
+        </li>
+        <li class="navbar-item">
+          <a class="square_btn2" href="#Simulation">Simulation</a>
+        </li>
+        <li class="navbar-item">
+          <a class="square_btn2" href="#Protocol">Protocol</a>
+        </li>
+      </ul>
+    </nav>
   </div>
- </div>
-<!-- Top of Page:Button -->
-<div id="page_top"><a href="#">Page Top</a></div>
-<!-- End Document-->
- <footer style="background-color:#EDF7FF;">
-	<center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
- </footer>
+  <!--design-->
+  <div class="container">
+    <div class="docs-section" id="Design">
+      <h2 class="docs-header">
+        <b>Design</b>
+      </h2>
+      <p>The following figures show the sequence motif of the DNA and their nucleotide sequences. The small letters of a, b,
+        c, … mean each motif, and letters with prime mean complementary sequences.
+      </p>
+    </div>
+
+    <!-- Simulation -->
+    <div class="docs-section" id="Simulation">
+      <h2 class="docs-header">
+        <b>Simulation</b>
+      </h2>
+      <p>Using the NUPACK, the software for the analysis and the design of sequences, the states of the combinations of the
+        above sequences was calculated.</p>
+    </div>
+
+    <!-- Protocol -->
+    <div class="docs-section" id="Protocol">
+      <h2 class="docs-header">
+        <b>Protocol</b>
+      </h2>
+
+      <h4>Melting curve with change of [Na
+        <sup>+</sup>] </h4>
+      <p> Based on the melting curve, the change of the ratio of double-strand was measured along the temperature fall, and the
+        effect of NaCl on the formation of the gels was estimated.
+        <br>
+        <table>
+          <style></style>
+        </table>
+        <table>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>TE Buffer</td>
+            <td>4.5</td>
+            <td>4.5</td>
+            <td>4.5</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <td>H1(1mM)</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>H2(1mM)</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>I_H(1mM)</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>EvaGreen</td>
+            <td>0.5</td>
+            <td>0.5</td>
+            <td>0.5</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>NaCl</td>
+            <td>125mM: 2</td>
+            <td>250mM: 2</td>
+            <td>500mM: 2</td>
+            <td>1000mM: 2</td>
+          </tr>
+          <tr>
+            <td>Total(µL)</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+        </table>
+      </p>
+
+
+
+
+      <h4> Electrophoresis of combination H1, H2 and I_H </h4>
+      <p>The states of the combinations were estimated based on the result of electrophoresis.
+        <br>
+        <table>
+          <style></style>
+        </table>
+        <table>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>TE Buffer</td>
+            <td>7.9</td>
+            <td>7.9</td>
+            <td>7.9</td>
+            <td>7.9</td>
+            <td>7.9</td>
+            <td>7.9</td>
+            <td>7.9</td>
+          </tr>
+          <tr>
+            <td>NaCl(5M)</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+          </tr>
+          <tr>
+            <td>H1(10µM)</td>
+            <td>0.6</td>
+            <td>0.6</td>
+            <td>0</td>
+            <td>0.6</td>
+            <td>0</td>
+            <td>0.6</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>H2(10µM)</td>
+            <td>0.6</td>
+            <td>0.6</td>
+            <td>0.6</td>
+            <td>0</td>
+            <td>0.6</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>I_H(10µM)</td>
+            <td>0.6</td>
+            <td>0</td>
+            <td>0.6</td>
+            <td>0.6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.6</td>
+          </tr>
+          <tr>
+            <td>Loading Buffer</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>0</td>
+            <td>0.6</td>
+            <td>0.6</td>
+            <td>0.6</td>
+            <td>1.2</td>
+            <td>1.2</td>
+            <td>1.2</td>
+          </tr>
+          <tr>
+            <td>Total(µL)</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+          </tr>
+        </table>
+      </p>
+
+
+
+
+
+      <h4>Melting curve with change of [I_H]</h4>
+      <p>Based on the melting curve, the change of the ratio of double-strand was measured along the temperature fall, and the
+        effect of concentration of I_H on the formation of the gels was estimated.
+        <br>
+        <table>
+          <style></style>
+        </table>
+        <table>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>TE Buffer</td>
+            <td>3.6</td>
+            <td>3.6</td>
+            <td>3.6</td>
+            <td>3.6</td>
+            <td>3.6</td>
+          </tr>
+          <tr>
+            <td>H1(1mM)</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+          </tr>
+          <tr>
+            <td>H2(1mM)</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+          </tr>
+          <tr>
+            <td>NaCl(500mM)</td>
+            <td>1.6</td>
+            <td>1.6</td>
+            <td>1.6</td>
+            <td>1.6</td>
+            <td>1.6</td>
+          </tr>
+          <tr>
+            <td>EvaGreen</td>
+            <td>0.4</td>
+            <td>0.4</td>
+            <td>0.4</td>
+            <td>0.4</td>
+            <td>0.4</td>
+          </tr>
+          <tr>
+            <td>Beacon</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+            <td>0.8</td>
+          </tr>
+          <tr>
+            <td>I_H</td>
+            <td>0</td>
+            <td>100µM: 0.5</td>
+            <td>100µM: 1</td>
+            <td>100µM: 2</td>
+            <td>1mM: 0.5</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>2</td>
+            <td>1.5</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1.5</td>
+          </tr>
+          <tr>
+            <td>Total(µL)</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+        </table>
+      </p>
+
+
+
+      <h4> Melting curve with change of [Mg
+        <sup>2+</sup>] </h4>
+      <p>Based on the melting curve, the effect of the concentration of Mg 2+ on the formation of the gels was estimated.
+        <br>
+        <table>
+          <style></style>
+        </table>
+        <table>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>TE Buffer</td>
+            <td>4.5</td>
+            <td>4.5</td>
+            <td>4.5</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <td>EvaGreen</td>
+            <td>0.5</td>
+            <td>0.5</td>
+            <td>0.5</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>H1(1mM)</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>H2(1mM)</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>I_H(100µM)</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>MgSO
+              <sub>4</sub>(100mM)</td>
+            <td>0</td>
+            <td>0.5</td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Loading Buffer</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>2</td>
+            <td>1.5</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Total(µL)</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+        </table>
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Top of Page:Button -->
+  <div id="page_top">
+    <a href="#">Page Top</a>
+  </div>
+  <!-- End Document-->
+  <footer style="background-color:#EDF7FF;">
+    <center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
+  </footer>
 </body>
+
 </html>
