@@ -3,99 +3,149 @@
 
 <head>
   <!-- Basic Page Needs -->
-  <meta charset="UTF-8N"><!---
---><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--
---><title>BIOMOD 2018 TEAM TOKYO　</title>
+  <meta charset="UTF-8N">
+  <!---
+-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+-->
+  <title>BIOMOD 2018 TEAM TOKYO　</title>
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"　type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" 　type="text/css">
   <!-- CSS -->
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/skeleton.css">
   <link rel="stylesheet" href="CSS/custom.css">
   <!-- Script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!--
---><script src="tinynav.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!--
+-->
+  <script src="tinynav.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="github-prettify-theme.css">
-  <script src="site.js"></script><!--Smooth Scroll
---><script>$(function(){
-		$('a[href^="#"]').click(function() {
-		var speed = 800;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var nw = $(window).width();
-		var kw = 600;
-		if (nw > kw){
-			var headerHeight =　 180;
-		} else {
-			var headerHeight = 120;
-		}
-		var position = target.offset().top - headerHeight; //headerズレ補正
-		$('body,html').animate({scrollTop:position}, speed, 'swing');
-		return false;
-		});
-	   });</script><!--Top of Page
---><script>$(function() {
-    var pagetop = $('#page_top');
-    var speed = 800;
-    pagetop.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 190) {
-            pagetop.fadeIn();
+  <script src="site.js"></script>
+  <!--Smooth Scroll
+-->
+  <script>$(function () {
+      $('a[href^="#"]').click(function () {
+        var speed = 800;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var nw = $(window).width();
+        var kw = 600;
+        if (nw > kw) {
+          var headerHeight = 180;
         } else {
-            pagetop.fadeOut();
+          var headerHeight = 120;
         }
-    });
-    pagetop.click(function () {
-        $('body,html').animate({scrollTop: 0}, speed, 'swing'); 
+        var position = target.offset().top - headerHeight; //headerズレ補正
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
         return false;
-    });
-   });</script>
+      });
+    });</script>
+  <!--Top of Page
+-->
+  <script>$(function () {
+      var pagetop = $('#page_top');
+      var speed = 800;
+      pagetop.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 190) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body,html').animate({ scrollTop: 0 }, speed, 'swing');
+        return false;
+      });
+    });</script>
 </head>
-<body class="code-snippets-visible"><!--
---><header class="wiki-header">
-  <img src="images/headerphoto.jpg">
+
+<body class="code-snippets-visible">
+  <!--
+-->
+  <header class="wiki-header">
+    <img src="images/headerphoto.jpg">
     <div class="navbar-spacer"></div>
-     <div class="container" style="max-height:22vh; margin-bottom:1rem">
+    <div class="container" style="max-height:22vh; margin-bottom:1rem">
       <nav class="navbar">
         <ul class="navbar-item" id="navigation">
-          <li class="navbar-item"><a class="square_btn" href="index.html">Home</a></li>
-	 <li class="navbar-item"><a class="square_btn" href="Introduction.html">Introduction</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="Method.html">Method</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Result.html">Results</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="Discussion.html">Discussion</a></li>
-	  <li class="selected"><a class="square_btn3" href="Future.html">Future</a></li>
-     <li class="navbar-item"><a class="square_btn" href="ELSI.html">ELSI</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Team.html">Team</a></li></ul></nav></div>
- </header>
-
-<script type="text/javascript">
-  $(function () {
-    $("#navigation").tinyNav();
-  });
-</script>
-<!--Future-->
-   <div class="container" style="padding-top:17rem;">
-    <div class="docs-section" id="Future">
-      <h2 class="docs-header"><b>Future</b></h2>
-     <p>Our study enables us to collect specific substances using DNA strands like a spider. This time, the “enemies”(targets) were DNA hydrogels but in the future we can achieve the following by divising the system so that we can collect other substances as well.</p>
-<h5>1. Functions as an immune <i>in vivo</i></h5> 
-<p>We got the idea of the "DNA spider" from the Phagocytic cells in the body of organisms. The DNA targets collecting system flows through the bloodstream and adsorbs targets marked by the DNA hydrogel just like the phagocytic cells would do with foreign substances marked by antibodies. By using this we can exclude antigens that we cannot exclude by the human immune system. The "DNA spider" injected from the outside would collect the antigens and the human immunes system would then exclude the DNA spider itself as an alien substance. These mechanisms can be used clinically as a revolutionary Immunomodulator. For example, we can mark cancer cells that has PD-1 ligands such as PD-L1 or PD-L2 which is treated using opdivo currently; a medicine with a very high price; and make them the target of innate immune system. <br>
-We may also be able to completely exclude viruses that can hide from the immune system, or phagosite dead cells that were not recognized by macrophages. Unrecognized dead cells are known to cause intractable autoimmune diseases.</p>
-<h5>2. Solution for Environmental Problems</h5>
-<p>If the target is a pollutant, we can apply this to water conditioning. We can also collect rare resources by designing the resource as “garbage”.</p>
-<h5>3. Contribution to Biology</h5>
-<p>We can effectively collect live microbes by designing the microbes as targets.</p>
+          <li class="navbar-item">
+            <a class="square_btn" href="index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Introduction.html">Introduction</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Method.html">Method</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Result.html">Results</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Discussion.html">Discussion</a>
+          </li>
+          <li class="selected">
+            <a class="square_btn3" href="Future.html">Future</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="ELSI.html">ELSI</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Team.html">Team</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-   </div>
+  </header>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#navigation").tinyNav();
+    });
+  </script>
+  <!--Future-->
+  <div class="container" style="padding-top:17rem;">
+    <div class="docs-section" id="Future">
+      <h2 class="docs-header">
+        <b>Future</b>
+      </h2>
+      <p>Our study enables us to collect specific substances using DNA strands like a spider. This time, the “enemies”(targets)
+        were DNA hydrogels but in the future we can achieve the following by divising the system so that we can collect other
+        substances as well.</p>
+      <h5>1. Functions as an immune
+        <i>in vivo</i>
+      </h5>
+      <p>We got the idea of the "DNA spider" from the Phagocytic cells in the body of organisms. The DNA targets collecting
+        system flows through the bloodstream and adsorbs targets marked by the DNA hydrogel just like the phagocytic cells
+        would do with foreign substances marked by antibodies. By using this we can exclude antigens that we cannot exclude
+        by the human immune system. The "DNA spider" injected from the outside would collect the antigens and the human immunes
+        system would then exclude the DNA spider itself as an alien substance. These mechanisms can be used clinically as
+        a revolutionary Immunomodulator. For example, we can mark cancer cells that has PD-1 ligands such as PD-L1 or PD-L2
+        which is treated using opdivo currently; a medicine with a very high price; and make them the target of innate immune
+        system.
+        <br> We may also be able to completely exclude viruses that can hide from the immune system, or phagosite dead cells
+        that were not recognized by macrophages. Unrecognized dead cells are known to cause intractable autoimmune diseases.</p>
+      <h5>2. Solution for Environmental Problems</h5>
+      <p>If the target is a pollutant, we can apply this to water conditioning. We can also collect rare resources by designing
+        the resource as target.</p>
+      <h5>3. Contribution to Biology</h5>
+      <p>We can effectively collect live microbes by designing the microbes as targets.</p>
+    </div>
   </div>
-<!-- Top of Page:Button -->
-<div id="page_top"><a href="#">Page Top</a></div>
-<!-- End Document-->
- <footer style="background-color:#EDF7FF;">
-	<center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
- </footer>
+  </div>
+  <!-- Top of Page:Button -->
+  <div id="page_top">
+    <a href="#">Page Top</a>
+  </div>
+  <!-- End Document-->
+  <footer style="background-color:#EDF7FF;">
+    <center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
+  </footer>
 </body>
+
 </html>
