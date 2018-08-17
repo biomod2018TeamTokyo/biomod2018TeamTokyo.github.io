@@ -345,17 +345,11 @@ th {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 3px solid #E1E1E1;}
-td2 {
-   padding: 12px 15px;
-  text-align: left;
-  border-bottom: 3px solid #E1E1E1; }
 th:first-child,
-td:first-child,
-td2:first-child {
+td:first-child {
   padding-left: 0; }
 th:last-child,
-td:last-child,
-td2:last-child {
+td:last-child {
   padding-right: 0; }
 
 /* Spacing */
