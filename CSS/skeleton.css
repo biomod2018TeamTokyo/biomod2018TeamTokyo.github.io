@@ -340,10 +340,10 @@ td {
   text-align: left;
   border-bottom: 1px solid #E1E1E1; }
 td.a {
-  border-right: 3px solid #E1E1E1;
+  border-right: 3px solid #191919;
 }
 td.c {
-  border-right: 3px solid #E1E1E1;
+  border-right: 3px solid #191919;
   border-bottom: 4px solid #191919;
 }
 td.d {
@@ -356,10 +356,10 @@ th {
   text-align: left;
   border-bottom: 3px solid #191919;}
 th.a {
-  border-right: 3px solid #E1E1E1;
+  border-right: 3px solid #191919;
 }
 th.c {
-  border-right: 3px solid #E1E1E1;
+  border-right: 3px solid #191919;
   border-bottom: 4px solid #191919;
 }
 th.d {
