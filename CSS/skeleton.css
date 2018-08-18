@@ -344,26 +344,26 @@ td.a {
 }
 td.c {
   border-right: 3px solid #E1E1E1;
-  border-bottom: 3px solid #E1E1E1;
+  border-bottom: 4px solid #191919;
 }
 td.d {
-  border-bottom: 3px solid #E1E1E1;
+  border-bottom: 4px solid #191919;
 }
 th {
  background-color: #ffffee;
  color: #860099;
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 3px solid #E1E1E1;}
+  border-bottom: 3px solid #191919;}
 th.a {
   border-right: 3px solid #E1E1E1;
 }
 th.c {
   border-right: 3px solid #E1E1E1;
-  border-bottom: 3px solid #E1E1E1;
+  border-bottom: 4px solid #191919;
 }
 th.d {
-  border-bottom: 3px solid #E1E1E1;
+  border-bottom: 4px solid #191919;
 }
 th:first-child,
 td:first-child {
