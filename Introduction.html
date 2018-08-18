@@ -3,145 +3,273 @@
 
 <head>
   <!-- Basic Page Needs -->
-  <meta charset="UTF-8N"><!---
---><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--
---><title>BIOMOD 2018 TEAM TOKYO　</title>
+  <meta charset="UTF-8N">
+  <!---
+-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+-->
+  <title>BIOMOD 2018 TEAM TOKYO　</title>
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"　type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" 　type="text/css">
   <!-- CSS -->
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/skeleton.css">
   <link rel="stylesheet" href="CSS/custom.css">
   <!-- Script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!--
---><script src="tinynav.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!--
+-->
+  <script src="tinynav.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="github-prettify-theme.css">
-  <script src="site.js"></script><!--Smooth Scroll
---><script>$(function(){
-		$('a[href^="#"]').click(function() {
-		var speed = 800;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var nw = $(window).width();
-		var kw = 600;
-		if (nw > kw){
-			var headerHeight =　 180;
-		} else {
-			var headerHeight = 120;
-		}
-		var position = target.offset().top - headerHeight; //headerズレ補正
-		$('body,html').animate({scrollTop:position}, speed, 'swing');
-		return false;
-		});
-	   });</script><!--Top of Page
---><script>$(function() {
-    var pagetop = $('#page_top');
-    var speed = 800;
-    pagetop.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 190) {
-            pagetop.fadeIn();
+  <script src="site.js"></script>
+  <!--Smooth Scroll
+-->
+  <script>$(function () {
+      $('a[href^="#"]').click(function () {
+        var speed = 800;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var nw = $(window).width();
+        var kw = 600;
+        if (nw > kw) {
+          var headerHeight = 180;
         } else {
-            pagetop.fadeOut();
+          var headerHeight = 120;
         }
-    });
-    pagetop.click(function () {
-        $('body,html').animate({scrollTop: 0}, speed, 'swing'); 
+        var position = target.offset().top - headerHeight; //headerズレ補正
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
         return false;
-    });
-   });</script>
+      });
+    });</script>
+  <!--Top of Page
+-->
+  <script>$(function () {
+      var pagetop = $('#page_top');
+      var speed = 800;
+      pagetop.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 190) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body,html').animate({ scrollTop: 0 }, speed, 'swing');
+        return false;
+      });
+    });</script>
 </head>
-<body class="code-snippets-visible"><!--
---><header class="wiki-header">
-  <img src="images/headerphoto.jpg">
+
+<body class="code-snippets-visible">
+  <!--
+-->
+  <header class="wiki-header">
+    <img src="images/headerphoto.jpg">
     <div class="navbar-spacer"></div>
-     <div class="container" style="max-height:22vh; margin-bottom:1rem">
+    <div class="container" style="max-height:22vh; margin-bottom:1rem">
       <nav class="navbar">
         <ul class="navbar-item" id="navigation">
-          <li class="navbar-item"><a class="square_btn" href="index.html">Home</a></li>
-	 <li class="selected"><a class="square_btn3" href="Introduction.html">Introduction</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="Method.html">Method</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Result.html">Results</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="Discussion.html">Discussion</a></li>
-	  <li class="navbar-item"><a class="square_btn" href="Future.html">Future</a></li>
-     <li class="navbar-item"><a class="square_btn" href="ELSI.html">ELSI</a></li>
-          <li class="navbar-item"><a class="square_btn" href="Team.html">Team</a></li></ul></nav></div>
- </header>
-
-<script type="text/javascript">
-  $(function () {
-    $("#navigation").tinyNav();
-  });
-</script>
-<!-- SubMenu -->
-     <div class="container" style="padding-top:17rem;">
-      <nav class="navbar">
-        <ul class="navbar-item" id="nav">
-          <li class="navbar-item"><a class="square_btn2" href="#Background">Motivation &amp; Background</a></li>
-	  <li class="navbar-item"><a class="square_btn2" href="#Project">Goal &amp; Project</a></li></ul></nav></div>
-<!--Background-->
-   <div class="container">
-    <div class="docs-section" id="Background">
-      <h2 class="docs-header"><b>Motivation and Background</b></h2>
-     <p> Immune systems protect the human body. One of them is the phagocytosis of macrophages <sup>[1]</sup>. Phagocytosis is a function that macrophages take to deal with some foreign objects around them. We tried to imitate this system in a microscale model using some DNA nanotechnologies: DNA hydrogels and strands. Our system can be applied to gathering foreign objects or bacteria around one specific point.</p>
-     <p> DNA hydrogel is a three-dimensional network structure made by DNA. It is easy to design structure with DNA strands. Therefore, DNA hydrogels have received considerable attention as one of the structural DNA nanotechnologies. Previous studies show that, by adding DNA initiators, DNA hydrogels can be formed thorough self-assembly process, called the Clamped Hybridization Chain Reaction (C-HCR) <sup>[2]</sup>. </p>
+          <li class="navbar-item">
+            <a class="square_btn" href="index.html">Home</a>
+          </li>
+          <li class="selected">
+            <a class="square_btn3" href="Introduction.html">Introduction</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Method.html">Method</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Result.html">Results</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Discussion.html">Discussion</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Future.html">Future</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="ELSI.html">ELSI</a>
+          </li>
+          <li class="navbar-item">
+            <a class="square_btn" href="Team.html">Team</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-<!-- Project -->
-    <div class="docs-section" id="Project"> <h2 class="docs-header"><b>Our Goal and Project</b></h2>
-    <p> Our final goal is to achieve a target collecting molecular-robot that can be used as man-made immune system. We named our system DNA spider. Like spiders kill harmful insects and protect farm products, our system will get rid of harmful substances in human body and keep us healthy!</p>
-	  <div class="row">
- 　 <img src="images/dna_spider_colored.png"> 
-   <p> <i>Figure 1.</i> The image of the DNA spider. </p>
-	</div>
-    <p>To collect the target substances, we took three steps: 1. Wrapping the target, 2. Capturing the target and 3. Holding the target, as showed in <i>Figure 2</i>.</p>
-     <div class="row">
- 　 <img src="images/capturing.png"> 
-   <p> <i>Figure 2.</i> The process of collecting the target substances in three steps. </p>
-	</div>
-    <h5>1. Wrapping target substances </h5><p>
-In this experiment, we used DNA hydrogel as the target substance. We designed <b>H1</b>, <b>H2</b> and <b>I_H</b> strand below. <b>H1</b> and <b>H2</b> has a linker region (l in the picture below) to connect DNA arms. First, <b>I_H</b> binds to <b>St1</b>, which is the part of target gel (i’ in <b>I_H</b> and i in <b>St1</b>). <i>Figure 4</i> shows <b>I_H</b> hybridizes <b>H1</b> (a, b in <b>H1</b> and a’, b’ in <b>I_H</b>). Then, <b>H2</b> binds to <b>H1-I_H</b> complex (c, b’ in <b>H1-I_H</b> complex and c’, b in <b>H2</b>). Alternately, <b>H1</b> and <b>H2</b> hybridize this complex and finally the DNA hydrogel are made. Through this self-assembly process, we covered the target with DNA hydrogel.</p>
-     <div class="row">
- 　 	<img src="images/intro_fig3.png"> 
-	     <p> <i>Figure 3.</i> The structure of <b>H1</b>, <b>H2</b> and <b>I_H</b>.</p>
-	<img src="images/intro_fig4.png"> 
-	     <p> <i>Figure 4.</i> The process of initiation.</p> 
-	 <img src="images/intro_fig5.png"> 
-	     <p> <i>Figure 5.</i> The process of gel-formation.</p> 
-	</div>
-	    <h5>2. Capturing the hydrogel-covered target </h5><p>
-	    The linker region of the DNA arms consists of <b>A3</b> and <b>A4</b> as shown in <i>Figure 7</i>. Linker region connects with DNA hydrogel (l in <b>I_H-H1-H2</b> complex) and catches hydrogel-covered targets. </p>
-           <img src="images/a3_structure.png"><img src="images/a4_structure.png">
-	    <p> <i>Figure 6.</i> The structure of <b>A3</b> and <b>A4</b>.</p> 
-	    <img src="images/intro_dna_arms.png">
-	    <p> <i>Figure 7.</i> DNA arms. </p> 
-	    <h5>3. Holding target by shrinking DNA arms </h5><p>
-	   To make shrinking region of the DNA arms, we first swelled the DNA arms. The complex of <b>A1</b> and <b>A2</b> keeps DNA hairpin structure. Strand <b>C</b> complementary combines <b>A1</b> and <b>A2</b> strand, and makes the DNA arms swelled. Adding <b>C’</b>, <b>C</b> and <b>C’</b> hybridize (z, x, x’ in <b>C</b> and z’, x’, x in <b>C’</b>), then <b>A1</b> and <b>A2</b> strands respectively make DNA hairpin structure. This process makes the DNA arms shrink. </p>
-    		<img src="images/a1_structure.png"><img src="images/a2_structure.png">    <img src="images/c_structure.png">     <img src="images/c'_structure.png">
-	    <p> <i>Figure 8.</i> The structure of <b>A1</b>, <b>A2</b>, <b>C</b> and <b>C'</b>.</p> 
-	    <img src="images/intro_fig9.png">
-	    <p> <i>Figure 9.</i> The mechanism of swelling and shrinking DNA arms.</p> 
-	    <p></p><p> Through Step1, 2 and 3, we aimed to catch target substances in phagocytosis-like system. </p>
-    <p> To clarify our progress, we set three phases of our project. <i>Figure 10</i> shows the level of achievement in each phase.</p>
-	   <div class="row">
- 　 <img src="images/intro_flowchart.png"> 
-   <p> <i>Figure 10.</i> The flowchart of our project. </p>
-	</div>
-    </div>
-	  
-     <p> <b>Reference </b> <br>
-        [1] Alan Aderem & David M. Underhill (1999). MECHANISM OF PHAGOCYTOSIS IN MACROPHAGES. <i>Annual Review of Immunology, 17</i>, 593-623.<br>
-        [2] Jianbang Wang, Jie Chao, Huajie Liu, Shao Su, Lianhui Wang, Wei Huang, Itamar Willner & Chunhai Fan (2017). Clamped Hybridization Chain Reactions for the Self-Assembly of Patterned DNA Hydrogels. <i>Angewandte Chemie, 129(8)</i>, 2203-2207.</p>
-   </div>
+  <script type="text/javascript">
+    $(function () {
+      $("#navigation").tinyNav();
+    });
+  </script>
+  <!-- SubMenu -->
+  <div class="container" style="padding-top:17rem;">
+    <nav class="navbar">
+      <ul class="navbar-item" id="nav">
+        <li class="navbar-item">
+          <a class="square_btn2" href="#Background">Motivation &amp; Background</a>
+        </li>
+        <li class="navbar-item">
+          <a class="square_btn2" href="#Project">Goal &amp; Project</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-<!-- Top of Page:Button -->
-<div id="page_top"><a href="#">Page Top</a></div>
-<!-- End Document-->
- <footer style="background-color:#EDF7FF;">
-	<center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
- </footer>
+  <!--Background-->
+  <div class="container">
+    <div class="docs-section" id="Background">
+      <h2 class="docs-header">
+        <b>Motivation and Background</b>
+      </h2>
+      <p> Immune systems protect the human body. One of them is the phagocytosis of macrophages
+        <sup>[1]</sup>. Phagocytosis is a function that macrophages take to deal with some foreign objects around them. We tried
+        to imitate this system in a microscale model using some DNA nanotechnologies: DNA hydrogels and strands. Our system
+        can be applied to gathering foreign objects or bacteria around one specific point.</p>
+      <p> DNA hydrogel is a three-dimensional network structure made by DNA. It is easy to design structure with DNA strands.
+        Therefore, DNA hydrogels have received considerable attention as one of the structural DNA nanotechnologies. Previous
+        studies show that, by adding DNA initiators, DNA hydrogels can be formed thorough self-assembly process, called the
+        Clamped Hybridization Chain Reaction (C-HCR)
+        <sup>[2]</sup>. </p>
+    </div>
+
+    <!-- Project -->
+    <div class="docs-section" id="Project">
+      <h2 class="docs-header">
+        <b>Our Goal and Project</b>
+      </h2>
+      <p> Our final goal is to achieve a target collecting molecular-robot that can be used as man-made immune system. We named
+        our system DNA spider. Like spiders kill harmful insects and protect farm products, our system will get rid of harmful
+        substances in human body and keep us healthy!</p>
+      <div class="row">
+      
+        <img src="images/dna_spider_colored.png">
+        <p>
+          <i>Figure 1.</i> The image of the DNA spider. </p>
+      </div>
+      <p>To collect the target substances, we took three steps: 1. Wrapping the target, 2. Capturing the target and 3. Holding
+        the target, as showed in
+        <i>Figure 2</i>.</p>
+      <div class="row">
+      
+        <img src="images/capturing.png">
+        <p>
+          <i>Figure 2.</i> The process of collecting the target substances in three steps. </p>
+      </div>
+      <h5>1. Wrapping target substances </h5>
+      <p>
+        In this experiment, we used DNA hydrogel as the target substance. We designed
+        <b>H1</b>,
+        <b>H2</b> and
+        <b>I_H</b> strand below.
+        <b>H1</b> and
+        <b>H2</b> has a linker region (l in the picture below) to connect DNA arms. First,
+        <b>I_H</b> binds to
+        <b>St1</b>, which is the part of target gel (i’ in
+        <b>I_H</b> and i in
+        <b>St1</b>).
+        <i>Figure 4</i> shows
+        <b>I_H</b> hybridizes
+        <b>H1</b> (a, b in
+        <b>H1</b> and a’, b’ in
+        <b>I_H</b>). Then,
+        <b>H2</b> binds to
+        <b>H1-I_H</b> complex (c, b’ in
+        <b>H1-I_H</b> complex and c’, b in
+        <b>H2</b>). Alternately,
+        <b>H1</b> and
+        <b>H2</b> hybridize this complex and finally the DNA hydrogel are made. Through this self-assembly process, we covered
+        the target with DNA hydrogel.</p>
+      <div class="row">
+      
+        <img src="images/intro_fig3.png">
+        <p>
+          <i>Figure 3.</i> The structure of
+          <b>H1</b>,
+          <b>H2</b> and
+          <b>I_H</b>.</p>
+        <img src="images/intro_fig4.png">
+        <p>
+          <i>Figure 4.</i> The process of initiation.</p>
+        <img src="images/intro_fig5.png">
+        <p>
+          <i>Figure 5.</i> The process of gel-formation.</p>
+      </div>
+      <h5>2. Capturing the hydrogel-covered target </h5>
+      <p>
+        The linker region of the DNA arms consists of
+        <b>A3</b> and
+        <b>A4</b> as shown in
+        <i>Figure 7</i>. Linker region connects with DNA hydrogel (l in
+        <b>I_H-H1-H2</b> complex) and catches hydrogel-covered targets. </p>
+      <img src="images/a3_structure.png">
+      <img src="images/a4_structure.png">
+      <p>
+        <i>Figure 6.</i> The structure of
+        <b>A3</b> and
+        <b>A4</b>.</p>
+      <img src="images/intro_dna_arms.png">
+      <p>
+        <i>Figure 7.</i> DNA arms. </p>
+      <h5>3. Holding target by shrinking DNA arms </h5>
+      <p>
+        To make shrinking region of the DNA arms, we first swelled the DNA arms. The complex of
+        <b>A1</b> and
+        <b>A2</b> keeps DNA hairpin structure. Strand
+        <b>C</b> complementary combines
+        <b>A1</b> and
+        <b>A2</b> strand, and makes the DNA arms swelled. Adding
+        <b>C’</b>,
+        <b>C</b> and
+        <b>C’</b> hybridize (z, x, x’ in
+        <b>C</b> and z’, x’, x in
+        <b>C’</b>), then
+        <b>A1</b> and
+        <b>A2</b> strands respectively make DNA hairpin structure. This process makes the DNA arms shrink. </p>
+      <img src="images/arm_structure.png">
+      <p>
+        <i>Figure 8.</i> The structure of
+        <b>A1</b>,
+        <b>A2</b>,
+        <b>C</b> and
+        <b>C'</b>.</p>
+      <img src="images/intro_fig9.png">
+      <p>
+        <i>Figure 9.</i> The mechanism of swelling and shrinking DNA arms.</p>
+      <p></p>
+      <p> Through Step1, 2 and 3, we aimed to catch target substances in phagocytosis-like system. </p>
+      <p> To clarify our progress, we set three phases of our project.
+        <i>Figure 10</i> shows the level of achievement in each phase.</p>
+      <div class="row">
+      
+        <img src="images/intro_flowchart.png">
+        <p>
+          <i>Figure 10.</i> The flowchart of our project. </p>
+      </div>
+    </div>
+
+    <p>
+      <b>Reference </b>
+      <br> [1] Alan Aderem & David M. Underhill (1999). MECHANISM OF PHAGOCYTOSIS IN MACROPHAGES.
+      <i>Annual Review of Immunology, 17</i>, 593-623.
+      <br> [2] Jianbang Wang, Jie Chao, Huajie Liu, Shao Su, Lianhui Wang, Wei Huang, Itamar Willner & Chunhai Fan (2017). Clamped
+      Hybridization Chain Reactions for the Self-Assembly of Patterned DNA Hydrogels.
+      <i>Angewandte Chemie, 129(8)</i>, 2203-2207.</p>
+  </div>
+  </div>
+  <!-- Top of Page:Button -->
+  <div id="page_top">
+    <a href="#">Page Top</a>
+  </div>
+  <!-- End Document-->
+  <footer style="background-color:#EDF7FF;">
+    <center> &copy;BIOMOD 2018 Team Tokyo (Mail: utkomaba2018&#64;gmail.com)</center>
+  </footer>
 </body>
+
 </html>
